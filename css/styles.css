@@ -111,8 +111,28 @@ footer.site-footer {
 }
 @media (max-width: 720px) { .footer-grid { grid-template-columns: 1fr; } }
 
-input, textarea, select { width: 100%; padding: 12px; border:1px solid var(--border); border-radius: 10px; background: var(--surface); color: var(--text); }
+input:not([type="radio"]):not([type="checkbox"]), textarea, select {
+  width: 100%;
+  padding: 12px;
+  border:1px solid var(--border);
+  border-radius: 10px;
+  background: var(--surface);
+  color: var(--text);
+}
+input[type="radio"], input[type="checkbox"] {
+  width: auto;
+  margin: 0;
+  accent-color: var(--primary);
+}
+label > input[type="radio"], label > input[type="checkbox"] { margin-right: 8px; }
 label { display: block; margin: 10px 0 6px; }
+.choice-group { border:0; padding:0; margin: 10px 0; }
+.choice-group label {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  margin: 0 16px 0 0;
+}
 .form-row { display: grid; gap: 12px; grid-template-columns: 1fr 1fr; }
 @media (max-width: 720px) { .form-row { grid-template-columns: 1fr; } }
 .form-actions { display: flex; gap: 10px; align-items: center; }
