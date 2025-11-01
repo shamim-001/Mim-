@@ -74,101 +74,17 @@
           </div>
 
           <div class="card" id="form">
-            <h2>Send a message</h2>
-            <form aria-label="Contact form">
-              <div class="form-row">
-                <div>
-                  <label for="fullName">Full Name</label>
-                  <input
-                    id="fullName"
-                    name="fullName"
-                    type="text"
-                    autocomplete="name"
-                    required
-                  />
-                </div>
-                <div>
-                  <label for="email">Email</label>
-                  <input
-                    id="email"
-                    name="email"
-                    type="email"
-                    autocomplete="email"
-                    required
-                  />
-                </div>
-              </div>
-
-              <div class="form-row">
-                <div>
-                  <label for="phone">Phone</label>
-                  <input
-                    id="phone"
-                    name="phone"
-                    type="tel"
-                    inputmode="tel"
-                    autocomplete="tel"
-                  />
-                </div>
-                <div>
-                  <label for="subject">Subject</label>
-                  <input id="subject" name="subject" type="text" required />
-                </div>
-              </div>
-
-              <label for="message">Message</label>
-              <textarea
-                id="message"
-                name="message"
-                minlength="10"
-                maxlength="1000"
-                rows="6"
-                required
-              ></textarea>
-
-              <fieldset class="choice-group">
-                <legend class="hidden">Preferred Contact Method</legend>
-                <label
-                  ><input
-                    type="radio"
-                    name="contactMethod"
-                    value="Email"
-                    checked
-                  />
-                  Email</label
-                >
-                <label
-                  ><input type="radio" name="contactMethod" value="Phone" />
-                  Phone</label
-                >
-              </fieldset>
-
-              <label class="hidden" for="website">Website</label>
-              <input
-                class="hidden"
-                id="website"
-                name="website"
-                type="text"
-                tabindex="-1"
-                autocomplete="off"
-                aria-hidden="true"
-              />
-
-              <div style="margin: 10px 0">
-                <label
-                  ><input type="checkbox" id="consent" required /> I consent to
-                  be contacted about my inquiry.</label
-                >
-              </div>
-
-              <div class="form-actions">
-                <button type="submit" class="btn">Send Message</button>
-                <span class="help"
-                  >Your information is used only to respond to your
-                  inquiry.</span
-                >
-              </div>
-            </form>
+            <h2>Schedule a Consultation</h2>
+            <div
+              class="calendly-inline-widget"
+              data-url="https://calendly.com/mimmdimrulhasan/30min"
+              style="min-width: 320px; height: 700px; width: 100%"
+            ></div>
+            <script
+              type="text/javascript"
+              src="https://assets.calendly.com/assets/external/widget.js"
+              async
+            ></script>
           </div>
         </div>
       </div>
